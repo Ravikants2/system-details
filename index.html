@@ -111,7 +111,7 @@
           <section class="stats-grid" aria-label="System overview">
             <article class="stat-card">
               <div class="stat-topline">
-                <span>DATA STORAGE</span>
+                <span>WINDOWS DATA</span>
                 <span class="stat-icon purple">
                   <svg viewBox="0 0 20 20" aria-hidden="true">
                     <path d="M10 2.5v15m-4-11h6a2 2 0 0 1 0 4H8a2 2 0 0 0 0 4h6" />
@@ -119,7 +119,7 @@
                 </span>
               </div>
               <div class="stat-value">PRIVATE</div>
-              <div class="stat-caption">Stored in a private GitHub repo</div>
+              <div class="stat-caption">Reports require private repo access</div>
             </article>
             <article class="stat-card">
               <div class="stat-topline">
@@ -217,18 +217,16 @@
                   </svg>
                 </div>
                 <p class="eyebrow">YOUR CHOICE, ALWAYS</p>
-                <h2>Add a snapshot to the private dataset.</h2>
+                <h2>Keep a snapshot for your records.</h2>
                 <p class="share-copy">
-                  Save a limited browser snapshot for analysis. No name, account, or full
-                  browser fingerprint is collected.
+                  Download a limited browser snapshot. No name, account, or full browser
+                  fingerprint is collected.
                 </p>
                 <label class="consent-row" for="consent-checkbox">
                   <input id="consent-checkbox" type="checkbox" />
                   <span class="custom-checkbox" aria-hidden="true"></span>
-                  <span>
-                    I agree to create a snapshot from these device details. On this
-                    static website, it will download to my device; a private API can
-                    save it to the private GitHub repository.
+                  <span id="consent-copy">
+                    I agree to download these limited device details as a JSON file.
                     <a href="#privacy">See what gets saved</a>.
                   </span>
                 </label>
@@ -277,12 +275,12 @@
             <div>
               <h2>A small snapshot. A clear choice.</h2>
               <p>
-                Before sharing, this page detects your browser, operating system, device
-                category, and display size locally. If you choose to share, those four
-                details and the submission time are saved in the configured private GitHub
-                repository. The server briefly uses your network address
-                to prevent spam; it does not put it in the saved record. No name, IP
-                address, cookies, precise location, or full browser fingerprint is saved.
+                This page detects your browser, operating system, broad device category,
+                and screen size locally. On GitHub Pages, an opted-in snapshot is
+                downloaded to this device and is not uploaded. When a separate, configured
+                private API is used, only those four values and a timestamp are sent to
+                the private GitHub repository. No name, MAC address, cookies, precise
+                location, or full browser fingerprint is included.
               </p>
             </div>
             <span class="privacy-footer-label">YOUR DATA. YOUR CALL.</span>

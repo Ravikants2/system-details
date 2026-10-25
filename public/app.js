@@ -14,6 +14,7 @@ const elements = {
   submitMessage: document.querySelector("#submit-message"),
   todayDate: document.querySelector("#today-date"),
   collectionStatus: document.querySelector("#collection-status"),
+  consentCopy: document.querySelector("#consent-copy"),
 };
 
 let storageMode = "checking";
@@ -91,6 +92,8 @@ async function loadServiceStatus() {
     setText(elements.serviceStatus, "All systems operational");
     elements.shareButton.querySelector("span").textContent =
       "Save to private repository";
+    elements.consentCopy.firstChild.textContent =
+      "I agree to save these limited device details in the private GitHub repository. ";
     elements.shareButton.disabled = !elements.checkbox.checked;
     setSubmissionMessage(
       "Your browser snapshot will be saved only to the verified private repository after confirmation.",

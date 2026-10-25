@@ -1,0 +1,13 @@
+title: System Details
+description: A consent-based system details dashboard.
+url: https://ravikants2.github.io
+baseurl: /system-details
+markdown: kramdown
+exclude:
+  - .env.example
+  - .gitignore
+  - README.md
+  - package.json
+  - server.js
+  - test
+  - data
